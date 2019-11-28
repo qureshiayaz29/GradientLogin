@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".MainActivity" >
+    tools:context=".RegisterActivity" >
 
     <TextView
         android:id="@+id/textView"
@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:fontFamily="@font/montserrat"
-        android:onClick="openRegister"
-        android:text="Don't have an account? Sign Up"
+        android:onClick="onLogin"
+        android:text="Already have an account? Log In"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginBottom="8dp"
         android:background="#fff"
         android:fontFamily="@font/montserrat"
-        android:text="Sign in"
+        android:text="Sign Up"
         android:textColor="#8D07A3"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +54,18 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
+
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
@@ -75,6 +87,17 @@
                 android:hint="Password"
                 android:inputType="textPersonName"
                 android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Confirm Password"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -84,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Welcome"
+        android:text="Register"
         android:textColor="#fff"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/montserrat"
-        android:text="Welcome to INSIDE ANDROID"
+        android:text="Create your new account"
         android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
