@@ -31,6 +31,7 @@
         android:fontFamily="@font/montserrat"
         android:text="Sign in"
         android:textColor="#8D07A3"
+        android:onClick="openHome"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

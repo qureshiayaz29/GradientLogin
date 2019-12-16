@@ -2,13 +2,11 @@ package in.insideandroid.loginscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,14 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
-    }
 
-    public void openRegister(View view) {
-        startActivity(new Intent(MainActivity.this, RegisterActivity.class));
-    }
-
-    public void openHome(View view) {
-        startActivity(new Intent(MainActivity.this, HomeActivity.class));
+        setContentView(R.layout.activity_home);
     }
 }
