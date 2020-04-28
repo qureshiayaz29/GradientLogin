@@ -1,5 +1,6 @@
 # GradientLogin
 
+![login 2](https://github.com/qureshiayaz29/GradientLogin/blob/master/plain_login.png?raw=true)
 ![home screen](https://github.com/qureshiayaz29/GradientLogin/blob/master/home.png?raw=true)
 ![login 2](https://github.com/qureshiayaz29/GradientLogin/blob/master/login_2_xml.png?raw=true)
 ![login pink](https://github.com/qureshiayaz29/GradientLogin/blob/master/login_pink.png?raw=true)
